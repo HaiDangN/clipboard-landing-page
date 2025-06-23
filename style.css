@@ -32,6 +32,7 @@ h1 {
     margin-bottom: 1.8rem;
     font-size: 2.7rem;
     font-weight: 600;
+    line-height: 3rem;
     color: hsl(210, 10%, 33%);
 }
 h2 {
@@ -110,8 +111,10 @@ main {
 .button {
     color: white;
     background-color: aqua;
-    padding: .6rem 2rem;
+    padding: .6rem 2.4rem;
     border-radius: 9999px;
+
+    font-size: 1.1rem;
 }
 .button--ios {
     background-color: rgb(38, 186, 164);
@@ -150,7 +153,7 @@ main {
 .feature__subfeatures--snippets {
     padding-top: 5rem;
     padding-left: 7rem;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -188,4 +191,82 @@ main {
 }
 .cta {
     padding-bottom: 3rem;
+}
+@media (max-width: 1150px) {
+    h1, h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    .hero p, description, .subfeature-text {
+        font-size: 18px;
+    }
+    .hero, .section-header {
+        width: 21.7rem;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .button {
+        font-size: 1.2rem;
+        padding: .9rem 5.5rem;
+        
+    }
+    .feature__body--snippets {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .feature__body--snippets img {
+        width: 80%;
+        height: 100;
+        margin-bottom: 5rem;
+    }
+    .feature__subfeature {
+        width: 21rem;
+    }
+    .feature__subfeatures--snippets {
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .feature--access img {
+        width: 90%;
+    }
+    .feature__subfeatures--supercharge {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature__subfeature--supercharge {
+        width: 20rem;
+    }
+    .company-logos {
+        flex-direction: column;
+    }
+    footer {
+        padding: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .links {
+        height: auto;
+        width: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .socials {
+        display: flex;
+        justify-content: center;
+        gap: 3rem; 
+    }
 }
