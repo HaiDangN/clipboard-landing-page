@@ -167,9 +167,6 @@ main {
 .feature__subfeature img {
     margin-bottom: 2rem;
 }
-.feature--supercharge {
-    margin-top: 0;
-}
 .feature__subfeatures--supercharge{
     display: flex;
     gap: 3rem;
@@ -201,7 +198,7 @@ main {
     h3 {
         font-size: 1.7rem;
     }
-    .hero p, description, .subfeature-text {
+    .hero p, .description, .subfeature-text {
         font-size: 18px;
     }
     .hero, .section-header {
@@ -223,7 +220,6 @@ main {
     }
     .feature__body--snippets img {
         width: 80%;
-        height: 100;
         margin-bottom: 5rem;
     }
     .feature__subfeature {
@@ -248,7 +244,6 @@ main {
         flex-direction: column;
     }
     footer {
-        padding: none;
         height: auto;
         display: flex;
         flex-direction: column;
